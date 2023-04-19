@@ -1,0 +1,44 @@
+{
+	"name": "pretty-framework",
+	"version": "0.1.0",
+	"description": "",
+	"scripts": {
+		"build": "del-cli dist && tsc --emitDeclarationOnly",
+		"prepack": "npm run build"
+	},
+	"keywords": [],
+	"type": "module",
+	"module": "./dist/index.js",
+	"typings": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./types": {
+			"types": "./dist/types/index.d.ts"
+		}
+	},
+	"directories": {
+		"lib": "src"
+	},
+	"files": [
+		"dist"
+	],
+	"author": "almostJohn <garcia.johngale@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"discord-api-types": "^0.37.38",
+		"discord.js": "^14.9.0",
+		"tsyringe": "^4.7.0",
+		"type-fest": "^3.8.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.11",
+		"del-cli": "^5.0.0",
+		"typescript": "^5.0.4"
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	}
+}
