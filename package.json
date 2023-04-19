@@ -1,7 +1,8 @@
 {
-	"name": "pretty-framework",
+	"name": "@almostjohn/pretty-framework",
 	"version": "0.1.0",
-	"description": "",
+	"description": "> .",
+	"main": "index.js",
 	"scripts": {
 		"build": "del-cli dist && tsc --emitDeclarationOnly",
 		"prepack": "npm run build"
@@ -40,5 +41,8 @@
 	},
 	"engines": {
 		"node": ">=16.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
