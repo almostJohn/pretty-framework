@@ -1,7 +1,7 @@
-import { type APIMessageComponentEmoji, ButtonStyle, type Snowflake } from "discord-api-types/v10";
+import { type APIMessageComponentEmoji, ButtonStyle } from "discord-api-types/v10";
 
 export type ButtonOptions = {
-	customId?: Snowflake | undefined;
+	customId?: string | undefined;
 	disabled?: boolean | undefined;
 	emoji?: APIMessageComponentEmoji | undefined;
 	label: string;

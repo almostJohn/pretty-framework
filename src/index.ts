@@ -5,4 +5,6 @@ export * from "./util/index.js";
 
 export * from "./Command.js";
 
+export * from "./logger.js";
+
 export { container } from "tsyringe";

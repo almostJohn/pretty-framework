@@ -1,6 +1,6 @@
 {
 	"name": "@almostjohn/pretty-framework",
-	"version": "0.1.0",
+	"version": "2.0.0",
 	"description": "> .",
 	"main": "index.js",
 	"scripts": {
@@ -31,6 +31,9 @@
 	"dependencies": {
 		"discord-api-types": "^0.37.38",
 		"discord.js": "^14.9.0",
+		"ioredis": "^5.3.2",
+		"pino": "^8.11.0",
+		"postgres": "^3.3.4",
 		"tsyringe": "^4.7.0",
 		"type-fest": "^3.8.0"
 	},
