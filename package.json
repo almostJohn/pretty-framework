@@ -1,11 +1,12 @@
 {
 	"name": "@almostjohn/pretty-framework",
-	"version": "2.1.1",
+	"version": "2.1.2",
 	"description": "> .",
 	"main": "index.js",
 	"scripts": {
-		"build": "del-cli dist && tsc --emitDeclarationOnly",
-		"prepack": "npm run build"
+		"build:clean": "del-cli dist",
+		"build:check": "tsc",
+		"prepack": "npm run build:clean && npm run build:check"
 	},
 	"keywords": [],
 	"type": "module",
