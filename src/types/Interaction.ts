@@ -48,7 +48,7 @@ export type InteractionParam<M extends CommandMethod = CommandMethod.ChatInput> 
 	M
 >[0];
 
-export type ArgsParam<M extends CommandMethod = CommandMethod.ChatInput> = CommandMethodParameters<
-	CommandPayload,
-	M
->[1];
+export type ArgsParam<
+	C extends CommandPayload,
+	M extends CommandMethod = CommandMethod.ChatInput,
+> = CommandMethodParameters<C, M>[1];
