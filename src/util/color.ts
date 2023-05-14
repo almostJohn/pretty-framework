@@ -1,3 +1,6 @@
+/**
+ * @deprecated Color is deprecated and it will be removed in the next major update. Use ColorStyle instead
+ */
 export const enum Color {
 	Blurple = 0x5865f2,
 	DarkButNotBlack = 0x2f3136,
