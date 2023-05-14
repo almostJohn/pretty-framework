@@ -1,3 +1,4 @@
+export * from "./color.js";
 export * from "./commandInfo.js";
 export * from "./dynamicImport.js";
 export * from "./ellipsis.js";
