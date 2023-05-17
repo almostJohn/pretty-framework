@@ -65,7 +65,7 @@ export abstract class Command<C extends CommandPayload = CommandPayload, R exten
 	}
 }
 
-export function commmandInfo(path: string): CommandInfo | null {
+export function commandInfo(path: string): CommandInfo | null {
 	if (extname(path) !== ".js") {
 		return null;
 	}
