@@ -7,7 +7,9 @@ export * from "./types/index.js";
 export * from "./util/index.js";
 
 export * from "./Command.js";
+export * from "./Component.js";
+export * from "./Constants.js";
+export * from "./Interaction.js";
 export * from "./logger.js";
 
-export { ColorStyle } from "./Constants.js";
 export { container } from "tsyringe";

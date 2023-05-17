@@ -8,7 +8,7 @@ import {
 	EMBED_FOOTER_TEXT_LIMIT,
 	EMBED_TITLE_LIMIT,
 } from "../Constants.js";
-import { ellipsis } from "../util/ellipsis.js";
+import { ellipsis } from "./ellipsis.js";
 
 export function addFields(embed: APIEmbed, ...data: APIEmbedField[]): APIEmbed {
 	return {

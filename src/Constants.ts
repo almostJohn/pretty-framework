@@ -12,6 +12,11 @@ export const ColorStyle = {
 	Green: 0x57f287,
 } as const;
 
+export const SNOWFLAKE_MIN_LENGTH = 17;
+
+export const AUTOCOMPLETE_CHOICE_LIMIT = 25;
+export const AUTOCOMPLETE_CHOICE_NAME_LIMIT = 100;
+
 export const EMBED_TITLE_LIMIT = 256;
 export const EMBED_DESCRIPTION_LIMIT = 4_096;
 export const EMBED_FOOTER_TEXT_LIMIT = 2_048;

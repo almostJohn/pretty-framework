@@ -3,10 +3,24 @@ import {
 	ButtonStyle,
 	ComponentType,
 	type APIButtonComponentBase,
+	type APIMessageComponentEmoji,
 } from "discord-api-types/v10";
-import type { ButtonOptions } from "../types/ButtonOptions.js";
 
-export function createButton({ customId, disabled, emoji, label, style, url }: ButtonOptions): APIButtonComponent {
+export function createButton({
+	label,
+	customId,
+	style,
+	url,
+	disabled,
+	emoji,
+}: {
+	customId?: string | undefined;
+	disabled?: boolean | undefined;
+	emoji?: APIMessageComponentEmoji | undefined;
+	label: string;
+	style?: ButtonStyle | undefined;
+	url?: string | undefined;
+}): APIButtonComponent {
 	const button: APIButtonComponentBase<any> = {
 		type: ComponentType.Button,
 		label,
