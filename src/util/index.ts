@@ -1,3 +1,4 @@
+export * from "./arrayEquals.js";
 export * from "./dynamicImport.js";
 export * from "./ellipsis.js";
 export * from "./embed.js";
